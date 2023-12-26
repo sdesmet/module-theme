@@ -1,0 +1,34 @@
+{
+    "name": "sdesmet/module-theme",
+    "type": "magento2-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steve Desmet",
+            "email": "steve.desmet@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Sdesmet\\Theme\\": ""
+        }
+    },
+    "require": {
+        "magento/framework": "*"
+    },
+    "extra": {
+        "map": [
+            [
+                "dev/tools/grunt/configs/postcss.js",
+                "dev/tools/grunt/configs/postcss.js"
+            ],
+            [
+                "dev/tools/grunt/configs/combo.js",
+                "dev/tools/grunt/configs/combo.js"
+            ]
+        ]
+    }
+}
